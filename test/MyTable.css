@@ -1,0 +1,41 @@
+.custom-table {
+    border: 2px solid black !important; /* Solid border around the entire table */
+}
+
+.custom-table th, .custom-table td {
+    border: 2px solid black !important; /* Solid borders for all table cells */
+}
+
+.input-cell {
+    padding: 0; /* Remove padding from the cell */
+}
+
+.input-field {
+    
+    width: 50px; /* Set the width of the input field */
+    margin: 0; /* Remove margin */
+    height: 30px; /* Set a consistent height */
+    border: 1px solid #ccc; /* Optional: add a border */
+    border-radius: 4px; /* Optional: add rounded corners */
+    box-shadow: none; /* Remove shadow for a flat look */
+    padding: 5px; /* Add some inner padding */
+}
+
+/* Remove border from header cells */
+.custom-table thead th {
+    border-color: #333;
+    border-right: none !important; /* Remove the right border */
+    background-color: #333 !important; /* Dark grey background */
+    color: white !important; /* White text color */
+}
+
+/* Last header cell shouldn't have a right border either */
+.custom-table thead th:last-child {
+    border-right: none !important; /* Remove the right border for the last header */
+}
+
+/* Optional: Remove the bottom border of the header row */
+.custom-table thead {
+    border-bottom: none !important; /* Remove bottom border of header row */
+}
+
